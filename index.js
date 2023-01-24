@@ -8,7 +8,7 @@ let usernameSpan = document.getElementById("username");
 let usuarioActivo = localStorage.getItem('usuarioActivo')
 usuarioActivo = JSON.parse(usuarioActivo);
 if(usuarioActivo == null){
-    location.href = "/.vs/Curso%20JS/v16/registro.html"
+    location.href = "registro.html" 
 }
 usernameSpan.innerHTML = usuarioActivo.nombre;
 submit.addEventListener('click', (e) => {
@@ -60,7 +60,7 @@ const cerrarSesion = document.getElementById('logout-button')
 cerrarSesion.addEventListener('click', (e) => {
     e.preventDefault()
     localStorage.removeItem('usuarioActivo');
-    location.href = "/.vs/Curso%20JS/v16/login.html"
+    location.href = "login.html"
 
 })
 

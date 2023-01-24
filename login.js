@@ -8,7 +8,7 @@ localStorage.setItem('Datos' + inicioSesion, JSON.stringify(almacenarDatos))
 let usuarioActivo = localStorage.getItem('usuarioActivo')
 usuarioActivo = JSON.parse(usuarioActivo);
 if(usuarioActivo != null){
-    location.href = "/.vs/Curso%20JS/v16/index.html"
+    location.href = "index.html"
 }
 button.addEventListener('click', (e) => {
     e.preventDefault()
@@ -40,7 +40,7 @@ button.addEventListener('click', (e) => {
             i++;
         }
         if (datosCorrectos) {
-            location.href = "/.vs/Curso%20JS/v16/index.html"
+            location.href = "index.html"
         } else {
             Swal.fire({
                 title: "Error",

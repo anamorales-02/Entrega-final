@@ -11,7 +11,7 @@ const usuario = {
 let usuarioActivo = localStorage.getItem('usuarioActivo')
 usuarioActivo = JSON.parse(usuarioActivo);
 if(usuarioActivo != null){
-    location.href = "/.vs/Curso%20JS/v16/index.html"
+    location.href = "index.html"
 }
 button.addEventListener('click', (e) => {
     e.preventDefault()
@@ -43,7 +43,7 @@ button.addEventListener('click', (e) => {
         nombre.value = ""
         contraseña.value = ""
         
-        location.href = "/.vs/Curso%20JS/v16/index.html"
+        location.href = "index.html"
        
         //determinar el usuario activo en ese momento de listaUsuario 
         localStorage.setItem('usuarioActivo', JSON.stringify(usuarioNuevo))
